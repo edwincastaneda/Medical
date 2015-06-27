@@ -1,0 +1,133 @@
+/* RESET */
+
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+    padding:0;
+}
+
+/* TRATAMIENTO DE TIPOGRAFIA */
+
+.mayus{
+    text-transform: uppercase;
+}
+
+.minus{
+    text-transform: lowercase;
+}
+
+.capi{
+    text-transform: capitalize;
+}
+
+
+
+/* ALINEACION */
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+
+/* PRESENTACION */
+.oculto{
+	display:none;
+}
+
+/* BOTONES */
+
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: #33CC33; /* this is a green */
+}
+
+.button-error {
+    background: #FF0000; /* this is a maroon */
+}
+
+.button-warning {
+    background: #FF6600; /* this is an orange */
+}
+
+.button-secondary {
+    background: #0099FF; /* this is a light blue */
+}
+
+
+/*
+.pure-form input[readonly], .pure-form select[readonly], .pure-form textarea[readonly] {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+    border-radius: 0px;
+    box-shadow: unset;
+}
+*/
+
+/* AREA DE CONTENIDO */
+
+#main {
+    width: 100%;
+}
+
+.puntero{
+    cursor:pointer;
+}
+
+.ocultar{
+    display:none;
+}
+
+.mas:after{
+    font-family: "FontAwesome";
+    content:"  \f063";
+    color:green;
+}
+
+.menos:after{
+    font-family: "FontAwesome";
+    content:"  \f062";
+    color:royalblue;
+}
+
+
+
+.actual{
+    display: block;
+    clear:both;
+    margin-top:5px;
+}
+

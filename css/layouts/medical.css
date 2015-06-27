@@ -1,0 +1,387 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #333;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+
+/*
+ * -- HELPER STYLES --
+ * Over-riding some of the .pure-button styles to make my buttons look unique
+ */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ 
+ */
+#layout, #nav, #list, #main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the navigation 100% width on phones */
+#nav {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: rgb(37, 42, 58);
+    text-align: center;
+}
+/* Show the "Menu" button on phones */
+#nav .nav-menu-button {
+    display: block;
+    top: 0.5em;
+    right: 0.5em;
+    position: absolute;
+}
+
+/* When "Menu" is clicked, the navbar should be 80% height */
+#nav.active {
+    height: 80%;
+}
+/* Don't show the navigation items... */
+.nav-inner {
+    display: none;
+}
+
+/* ...until the "Menu" button is clicked */
+#nav.active .nav-inner {
+    display: block;
+    padding: 2em 0;
+}
+
+
+/*
+ * -- NAV BAR STYLES --
+ * Styling the default .pure-menu to look a little more unique.
+ */
+#nav .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+    #nav .pure-menu-link:hover,
+    #nav .pure-menu-link:focus {
+        background: rgb(55, 60, 90);
+    }
+    #nav .pure-menu-link {
+        color: #fff;
+        margin-left: 0.5em;
+    }
+    #nav .pure-menu-heading {
+        border-bottom: none;
+        font-size:110%;
+        color: rgb(75, 113, 151);
+    }
+
+	
+/* MENU CORRECTIONS */
+#nav .nav-menu-button {
+    font-size: 19px;
+}
+
+.pure-menu-item {
+    font-size: 0.8em;
+    margin-left: -8px;
+}
+
+#nav .pure-menu-heading {
+    margin-left: -6px;
+}
+
+
+/* LOGIN FORM*/
+.login{
+    margin-top:20vh !important;
+}
+
+.login-form {
+    width: 250px;
+}
+
+.login-form-div{
+    max-width: 320px;
+    padding-top: 30px;
+    height: 340px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+
+.err{
+    color:red;
+}	
+	
+
+/*
+ * -- CITAS STYLES --
+ */
+.citas-count {
+    color: rgb(75, 113, 151);
+}
+
+.mnu{
+    cursor:pointer;
+}
+
+/* Cita Item Styles */
+.cita-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+	cursor:pointer;
+}
+    .cita-avatar {
+        border-radius: 3px;
+        margin-right: 0.5em;
+    }
+    .cita-date,
+    .cita-name{
+        margin: 0;
+    }
+    .cita-date {
+        text-transform: uppercase;
+        color: #999;
+    }
+    .cita-desc {
+        font-size: 80%;
+        margin: 0.4em 0;
+    }
+	
+.pendiente {
+border-left: 6px solid #636363;
+}
+
+.atendida {
+	border-left: 6px solid #33CC33;
+}
+
+.cancelada {
+	border-left: 6px solid #FF0000;
+}
+
+.reprogramada {
+	border-left: 6px solid #0099FF;
+}
+
+
+/* Cita Content Styles */
+
+.cita-content-header, .cita-content-body, .cita-content-footer {
+    padding: 1em 2em;
+}
+    .cita-content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .cita-content-title {
+            margin: 0.5em 0 0;
+        }
+        .cita-content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .cita-content-subtitle span {
+                color: #999;
+            }
+    .cita-content-controls {
+        margin-top: 1.2em;
+        text-align: center;
+    }
+        .cita-content-controls .secondary-button {
+            margin-bottom: 0.3em;
+			width:124px;
+        }
+
+    .cita-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+	.cita-content-empty h1 {
+    color: #ddd;
+    padding: 20px 50px;
+    margin-top:5vh;
+	}
+
+/* EXPEDIENTES */
+
+.expediente-avatar{
+    width: 70px;
+    height: 70px;
+}
+
+
+.estado-pendiente, .estado-atendida, .estado-cancelada,.estado-reprogramada{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 3px;}
+
+.estado-pendiente{
+    background: #636363;
+}
+
+.estado-atendida{
+    background: #33CC33;
+}
+
+.estado-cancelada{
+    background: #FF0000;
+}
+
+.estado-reprogramada{
+    background: #0099FF;
+}
+
+
+
+/* CALENDARIO */
+		.dia_calendario{
+    background:#E2F2FE;
+    width: 40px;
+    height: 24px;
+    border-top: 13px solid #1B9BFE;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0px 2px 1px #89CCFB; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.calendario-item {
+  padding: 0.9em 1em;
+  border: 1px solid #ddd;
+  letter-spacing:0px;
+    cursor:pointer;
+  
+}
+
+.mes-calendario {
+  font-size: 11px;
+    position: absolute;
+    margin-top:-12px;
+    color:#fff;
+    text-align: center;
+}
+
+.nombre_dia_calendario{
+  font-size: 30px;
+  margin: 3px 0 0 6px;
+}
+
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 40em) {
+
+    /* Move the layout over so we can fit the nav + list in on the left */
+    #layout {
+        padding-left:500px; /* "left col (nav + list)" width */
+        position: relative;
+    }
+
+    /* These are position:fixed; elements that will be in the left 500px of the screen */
+    #nav, #list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+    #nav {
+        margin-left:-500px; /* "left col (nav + list)" width */
+        width:150px;
+        height: 100%;
+    }
+
+    /* Show the menu items on the larger screen */
+    .nav-inner {
+        display: block;
+        padding: 2em 0;
+    }
+
+    /* Hide the "Menu" button on larger screens */
+    #nav .nav-menu-button {
+        display: none;
+    }
+
+    #list {
+        margin-left: -350px;
+        width: 100%;
+        height: 33%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #main {
+        position: fixed;
+        top: 33%;
+        right: 0;
+        bottom: 0;
+        left: 150px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 60em) {
+
+    /* This will take up the entire height, and be a little thinner */
+    #list {
+        margin-left: -350px;
+        width:350px;
+        height: 100%;
+        border-right: 1px solid #ddd;
+    }
+
+    /* This will now take up it's own column, so don't need position: fixed; */
+    #main {
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+}
+
